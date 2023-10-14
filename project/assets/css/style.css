@@ -1,0 +1,148 @@
+            * {
+            box-sizing: border-box;
+            }
+            body {
+            margin: 0;
+            }
+            .gpd-header{
+            margin:0;
+            }
+            body{
+            color:#777;
+            font-family:Helvetica, serif;
+            }
+            #iefgm{
+            padding:10px;
+            font-size:1.5rem;
+            margin:0 0 40px 0;
+            }
+            .button2{
+            display:inline-block;
+            padding-top:15px;
+            padding-right:30px;
+            padding-bottom:15px;
+            padding-left:30px;
+            text-decoration-line:none;
+            text-decoration-style:initial;
+            text-decoration-color:initial;
+            text-align:center;
+            opacity:1;
+            transition-duration:0.25s, 0.25s;
+            transition-timing-function:initial, initial;
+            transition-delay:initial, initial;
+            transition-property:color, opacity;
+            border-top-left-radius:100px;
+            border-top-right-radius:100px;
+            border-bottom-right-radius:100px;
+            border-bottom-left-radius:100px;
+            color:white;
+            background-color:#65dca7;
+            }
+            .button2:hover{
+            opacity:0.85;
+            }
+            .button2:active{
+            opacity:0.95;
+            }
+            .button4.button2{
+            background-color:transparent;
+            }
+            #ip5mj{
+            font-weight:400;
+            }
+            #iinzm{
+            min-height:100vh;
+            background-image:linear-gradient(rgba(31,30,30,0.53),rgba(31,30,30,0.53)), url('https://cdn.grapedrop.com/uab05a4c4d09b4495bf5d9ee08f9f952d/aa936b026b7e4eaa97518aed9ade3802_aditya-vyas-b9mulm2uzik-unsplash_1.jpg');
+            background-repeat:repeat, no-repeat;
+            background-position:left top, left top;
+            background-attachment:scroll, fixed;
+            background-size:auto, cover;
+            color:white;
+            font-weight:200;
+            padding:10px 0 50px 0;
+            }
+            #i5lxfh{
+            height:100%;
+            flex-direction:column;
+            }
+            #i28d7l{
+            padding:0 0 25px 0;
+            }
+            #izx2ig{
+            height:100%;
+            align-items:center;
+            }
+            #iaunhw{
+            font-size:4rem;
+            margin:39.84px 0 40px 0;
+            text-transform:uppercase;
+            font-family:Verdana, Geneva, sans-serif;
+            }
+            #ica46x{
+            text-align:center;
+            }
+            @media (max-width: 768px){
+            #i5lxfh{
+                flex-wrap:nowrap;
+            }
+            #iaunhw{
+                font-size:3rem;
+            }
+            }
+            @media (max-width: 375px){
+                #iaunhw{
+                    font-size:2rem;
+                }
+            }
+
+            .fade-in-down {
+                opacity: 0;
+                animation: fade-in-down 1s ease-in-out forwards;
+            }
+
+            .fade-in-up {
+                opacity: 0;
+                animation: fade-in-up 1s ease-in-out forwards;
+            }
+
+            @keyframes fade-in-down {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-100%);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes fade-in-up {
+                0% {
+                    opacity: 0;
+                    transform: translateY(100%);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            .fade-in {
+                opacity: 0;
+                animation: fade-in 1s ease-in-out forwards;
+              }
+          
+              @keyframes fade-in {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+              }
+
+
+
+
+
+
+              /* disini style baru */

@@ -1,0 +1,146 @@
+Mekanisme Eksekusi Source Code
+Kesimpulan :
+PHP merupakan Bahasa pemrograman Scripting
+PHP dieksekusi pada server side
+Tools untuk mengeksekusi PHP yaitu text editor, web server, web browser
+
+Mengeksekusi Source Code
+Kesimpulan :
+File php disimpan pada folder c:/xampp/htdocs supaya dapat dieksekusi
+Jalankan modul apache pada aplikasi xampp untuk memulai eksekusi
+
+Mengidentifikasi Hasil Eksekusi
+Kesimpulan :
+Ketika mengeksekusi pastikan hasil eksekusi sesuai dengan skenario
+Macam - macam jenis kesalahan ketika eksekusi php Parse error, Fatal error, Warning error, Notice error
+<?php
+// Contoh Parse error, karena ada kesalahan dalam sintaksis
+echo "Hello, world!"
+?>
+<?php
+// Contoh Fatal error, karena mencoba menggunakan fungsi yang belum didefinisikan
+$result = calculate(10, 20);
+echo $result;
+?>
+<?php
+// Contoh Warning error, karena mencoba mengakses elemen array yang tidak ada
+$fruits = array('apple', 'banana', 'orange');
+echo $fruits[3];
+?>
+<?php
+// Contoh Notice error, karena menggunakan variabel yang belum didefinisikan
+echo $message;
+?>
+
+
+Menggunakan tipe Data dan Kontrol program
+Tipe data berperan penting dalam Bahasa pemrograman karena berkaitan dengan variable yang digunakan dalam membuat perangkat lunak.
+Struktur pemrograman php membantu dalam memahami proses eksekusi program dan memudahkan dalam pembuatan sebuah perangkat lunak
+Macam-macam tipe data
+Tipe data integer (0-99)
+Tipe data float (angkat yang berakhiran 0,9999)
+Tipe data boolean (true, false)
+Tipe data string (biasanya berisi karakter huruf)
+Tipe data array (kumpulan number dan huruf)
+
+Macam-macam operator
+Operator Aritmatika (bisa digunakan dalam kalkulator/perhitungan)
+Operator penugasan atau assignment (contoh +=, =, -=)
+Operator increment & decrement (increment ++, decrement --)
+Operator relasi atau pembanding (<, >, >=, <=)
+Operator logika (&&, ||, !)
+Operator ternary (? dan :)
+
+
+Membuat program sederhana
+Kesimpulan :
+Form mempunyai 2 buah atribut yaitu action dan method yang harus disesuaikan dengan kebutuhan
+Semakin kompleks percabangan atau perulangan maka akan semakin memperlambat proses loading time server
+
+
+Membuat program menggunakan prosedur dan fungsi
+Fungsi pada php dibagi menjadi 2 yaitu built-in function yang merupakan fungsi bawaan PHP dan user-defined function, dimana kita membuat fungsi sendiri
+Prosedur : tidak mengembalikan nilai
+Fungsi : mengembalikan nilai
+pada PHP, prosedur dan fungsi menggunakan sintaks function
+Strutkur penulisan fungsi 
+function cetak($text, $callback)
+{
+echo $text;
+}
+
+
+Membuat program menggunakan array
+Array dapat digunakan untuk menyimpan beberapa tipe data sehingga sangat fleksibel dan mudah di organisir
+
+Mengelola sumber daya pemrograman sesuai konteks
+Penyusunan sumberdaya pemrograman dilakukan sesuai konteks serta dapat disertai dengan readme yang mengandung penjelasan mengenai struktur/hirarki folder dan sumber daya pemrograman
+
+
+Menerapkan coding guidelines dan best practices dalam penulisan program (kode sumber)
+coding guidelines adalah acuan bagi developer untuk membuat kode program yang lebih mudah dibaca dan dipelihara.
+paradigma pemrograman adalah cara untuk mengklasifikasikan kode program berdasarkan fitur program yang dibuat
+galat/error adalah pesan yang akan muncul sesuai dengan kesalahan pada kode program.
+
+
+Menggunakan ukuran performasi dalam menuliskan kode sumber
+Coding guidelines dibutuhkan untuk mempermudah interaksi antar programmer dalam pembuatan atau maintenance program.
+Semakin kompleks kode program yang dibangun maka semakin besar resource yang dibutuhkan untuk menjalankan program tersebut.
+
+
+Penggunaan liblary atau komponen pre-existing
+Memilih artefak (unit-unit) dalam penerapan reuse, harus disesuaikan dengan kebutuhan.
+Integrasi liblary atau komponen pre-existing perlu memperhatikan ketergantungan antar unit dan komponen yang sudah obsolete.
+Pembaharuan liblary atau komponen liblary atau komponen pre-existing dapat secara mudah dilakukan dengan memanfaatkan composer
+
+
+Mengidentifikasi rancangan UI
+UI adalah proses untuk membuat antarmuka dalam sebuah perangkat lunak
+Langkah proses merancang kotak dialog adalah merancang urutan dialog, mendesain prototype/mock-up, evaluasi kegunaan
+Sebelum melakukan implementasi, terlebih dahulu merancang prototype/mock-up yang dapat dilakukan dengan beberapa berangkat lunak free dan open source, salah satunya pencil project
+
+
+berikut codingan untuk membuka file txt di PHP
+
+
+
+$file = fopen("nama_file.txt", "w"); // Membuka file untuk ditulis ("w" = write)
+
+
+
+if ($file) {
+
+    $data = "Ini adalah contoh tulisan dalam file.\n";
+
+    fwrite($file, $data);
+
+
+
+
+    Test Tulis Sertifikasi
+    1. Tuliskan dan jelaskan langkah-langkah yang Anda lakukan dalam merancang User Interface
+Jawaban : Membuat Sketsa (Wireframe) di software Pencil, Membuat Desain Visual (Visual Design) termasuk prototype nya juga di grapedrop, setelah itu implementasikan User Interface tersebut kedalam code dengan bahasa pemrograman yang relevan
+2. Apa yang Anda lakukan jika source yang Anda buat gagal untuk dieksekusi?
+Jawaban : pertama periksa error message, lalu identifikasi lokasi error kesalahan tersebut, setelah itu tinjau kembali kode tersebut. Kemudian perbarui error tersebut, jika masih error mencoba minta bantuan ke teman yang lebih mengerti
+3. Anda sebagai seorang web developer diberikan tugas untuk mengembangkan suatu website. Apa yang akan Anda lakukan untuk mengantisipasi agar source code yang Anda buat mudah dimengerti oleh developer lainnya?
+Jawaban : jika saya bekerja dalam tim, maka saya akan menambahkan coding guidelines atau komentar disetiap codingan atau sintaks tersebut.
+4. Apa yang Anda lakukan jika terdapat parse error saat menjalankan program pada browser?
+Jawaban : mengidentifikasi error, biasanya parse error dalam PHP tersebut dikarenakan kita kurang teliti dalam hal ";" diakhir sintaks php
+5. Bagaimana cara untuk menulis dan membaca file txt dengan menggunakan bahasa pemrograman PHP?
+Jawaban : berikut codingan untuk membuka file txt di PHP
+
+
+
+$file = fopen("nama_file.txt", "w"); // Membuka file untuk ditulis ("w" = write)
+
+
+
+if ($file) {
+
+    $data = "Ini adalah contoh tulisan dalam file.\n";
+
+    fwrite($file, $data);
+6. Tuliskan langkah-langkah untuk memperbarui library
+Jawaban : dikarenakan saya menggunakan text editor VSCode maka untuk memperbarui library saya hanya melakukan instalasi sebagai berikut:
+
+"npm update nama_library"

@@ -1,0 +1,34 @@
+[
+    {
+        "nim": "41200125",
+        "nama": "Asep Saepudin",
+        "jenis_kelamin": "Laki - Laki",
+        "tempat_lahir": "",
+        "tanggal_lahir": "2001-12-11",
+        "agama": "Islam",
+        "alamat": "Cirebon",
+        "no_telepon": "085721485664",
+        "email": "saepudin@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "mata_kuliah": "Pemrograman Web",
+        "nilai": "80",
+        "grade": "C",
+        "status": "Lulus"
+    },
+    {
+        "nim": "41200124",
+        "nama": "Ali Ikbal",
+        "jenis_kelamin": "Laki - Laki",
+        "tempat_lahir": "Cirebon",
+        "tanggal_lahir": "2002-06-18",
+        "agama": "Islam",
+        "alamat": "Cirebon",
+        "no_telepon": "085721485663",
+        "email": "ali@gmail.com",
+        "jurusan": "Ssistem Informasi",
+        "mata_kuliah": "Jaringan Komputer",
+        "nilai": "91",
+        "grade": "A",
+        "status": "Lulus"
+    }
+]
